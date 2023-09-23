@@ -4,8 +4,9 @@ on:
   workflow_dispatch:
 
 jobs:
-    runs-on: windows-2019
-    steps:
+  Alist:
+   runs-on: windows-2019
+   steps:
     - uses: actions/checkout@v2
     - name: Download
       run: Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
